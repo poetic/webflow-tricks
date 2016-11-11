@@ -40,3 +40,11 @@
       ```
     - on all elements that you do not want to trigger drowdown close, add the
       class 'w-keep-dropdown-open'
+
+- Make animation and javascript work:
+  - Solution:
+    run the following when the dom is ready:
+    ```
+    window.Webflow.destroy();
+    window.Webflow.ready();
+    ```

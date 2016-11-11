@@ -42,9 +42,11 @@
       class 'w-keep-dropdown-open'
 
 - Make javascript work (this is related to javascript powered animation):
+
   When we use webflow in React, Angular or other frameworks, the javascript only
   initialize once and is not necessarily triggered after the dom is ready.
   This cause the javascript to break.
+
   https://forum.webflow.com/t/when-integrating-webflow-site-with-angularjs-webflow-js-stops-working/21691
   - Error:
     Javascript does not work.

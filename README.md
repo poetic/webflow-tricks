@@ -41,9 +41,16 @@
     - on all elements that you do not want to trigger drowdown close, add the
       class 'w-keep-dropdown-open'
 
-- Make animation and javascript work:
+- Make javascript work (this is related to javascript powered animation):
+  When we use webflow in React, Angular or other frameworks, the javascript only
+  initialize once and is not necessarily triggered after the dom is ready.
+  This cause the javascript to break.
+  https://forum.webflow.com/t/when-integrating-webflow-site-with-angularjs-webflow-js-stops-working/21691
+  - Error:
+    Javascript does not work.
   - Solution:
     run the following when the dom is ready:
+
     ```
     window.Webflow.destroy();
     window.Webflow.ready();
